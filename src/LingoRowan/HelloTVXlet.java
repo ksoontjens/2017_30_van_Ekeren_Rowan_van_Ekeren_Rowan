@@ -27,15 +27,7 @@ public class HelloTVXlet implements Xlet,HActionListener,UserEventListener
     }
 
     public void initXlet(XletContext ctx) throws XletStateChangeException {
-        Observer ob1=new Observer();
-        Observer ob2=new Observer();
-        Observer ob3=new Observer();
-        Subject sub=new Subject();
-        sub.register(ob1); sub.register(ob2); sub.register(ob3);
-        
-        MijnTimerTask mtt=new MijnTimerTask(sub);
-        Timer tim=new Timer();
-        tim.scheduleAtFixedRate(mtt, 0  , 10); // start op 0 elke 1000ms
+
         
     System.out.println("Xlet gestart");
     // EventManager aanvragen
